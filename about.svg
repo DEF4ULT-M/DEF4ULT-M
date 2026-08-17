@@ -1,0 +1,250 @@
+<svg width="900" height="540" viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="900" y2="540">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#A371F7"/>
+      <stop offset="100%" stop-color="#39C5CF"/>
+    </linearGradient>
+
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="700" y2="0">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#A371F7"/>
+      <stop offset="100%" stop-color="#39C5CF"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .panel {
+      fill: #0d1117;
+      stroke: url(#border);
+      stroke-width: 2;
+    }
+
+    .topbar {
+      fill: #161b22;
+    }
+
+    .title {
+      font-family: "Courier New", monospace;
+      font-size: 26px;
+      font-weight: bold;
+      fill: url(#titleGradient);
+    }
+
+    .text {
+      font-family: "Courier New", monospace;
+      font-size: 18px;
+      fill: #c9d1d9;
+    }
+
+    .blue {
+      fill: #58A6FF;
+    }
+
+    .purple {
+      fill: #A371F7;
+    }
+
+    .green {
+      fill: #7EE787;
+    }
+
+    .yellow {
+      fill: #E3B341;
+    }
+
+    .cyan {
+      fill: #39C5CF;
+    }
+
+    .red {
+      fill: #FF7B72;
+    }
+
+    .line {
+      opacity: 0;
+      animation: appear 0.5s ease forwards;
+    }
+
+    .l1 { animation-delay: 0.8s; }
+    .l2 { animation-delay: 1.4s; }
+    .l3 { animation-delay: 2.0s; }
+    .l4 { animation-delay: 2.6s; }
+    .l5 { animation-delay: 3.2s; }
+    .l6 { animation-delay: 3.8s; }
+    .l7 { animation-delay: 4.4s; }
+    .l8 { animation-delay: 5.0s; }
+    .l9 { animation-delay: 5.6s; }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .cursor {
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%, 45% {
+        opacity: 1;
+      }
+
+      46%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .pulse {
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.55;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .scan {
+      opacity: 0.06;
+      animation: scan 4s linear infinite;
+    }
+
+    @keyframes scan {
+      from {
+        transform: translateY(-100px);
+      }
+
+      to {
+        transform: translateY(540px);
+      }
+    }
+  </style>
+
+  <!-- Main panel -->
+  <rect x="1" y="1" width="898" height="538" rx="18" class="panel"/>
+
+  <!-- Top bar -->
+  <path
+    d="M1 18C1 8.6 8.6 1 18 1H882C891.4 1 899 8.6 899 18V60H1V18Z"
+    class="topbar"
+  />
+
+  <!-- Window controls -->
+  <circle cx="30" cy="30" r="7" fill="#ff5f56"/>
+  <circle cx="54" cy="30" r="7" fill="#ffbd2e"/>
+  <circle cx="78" cy="30" r="7" fill="#27c93f"/>
+
+  <text x="450" y="38" text-anchor="middle" class="text" font-size="15">
+    makhmud@github: ~/about-me
+  </text>
+
+  <!-- Heading -->
+  <text x="35" y="105" class="title" filter="url(#glow)">
+    💻 Welcome to My GitHub Universe!
+  </text>
+
+  <!-- Animated content -->
+
+  <text x="40" y="155" class="text line l1">
+    <tspan class="blue">📊</tspan>
+    <tspan> Exploring </tspan>
+    <tspan class="purple">Data Science, Data Analysis &amp; Machine Learning</tspan>
+  </text>
+
+  <text x="40" y="195" class="text line l2">
+    <tspan class="green">⚙️</tspan>
+    <tspan> Building reliable </tspan>
+    <tspan class="blue">backend applications and APIs</tspan>
+  </text>
+
+  <text x="40" y="235" class="text line l3">
+    <tspan class="cyan">🌐</tspan>
+    <tspan> Developing modern </tspan>
+    <tspan class="purple">web applications</tspan>
+  </text>
+
+  <text x="40" y="275" class="text line l4">
+    <tspan class="yellow">🐍</tspan>
+    <tspan> Working primarily with </tspan>
+    <tspan class="green">Python</tspan>
+  </text>
+
+  <text x="40" y="315" class="text line l5">
+    <tspan class="blue">🗄️</tspan>
+    <tspan> Experienced with </tspan>
+    <tspan class="cyan">SQL &amp; Oracle databases</tspan>
+  </text>
+
+  <text x="40" y="355" class="text line l6">
+    <tspan class="red">☕</tspan>
+    <tspan> Building and learning with </tspan>
+    <tspan class="yellow">Java</tspan>
+  </text>
+
+  <text x="40" y="395" class="text line l7">
+    <tspan class="purple">🚀</tspan>
+    <tspan> Always improving my </tspan>
+    <tspan class="green">programming &amp; problem-solving skills</tspan>
+  </text>
+
+  <text x="40" y="435" class="text line l8">
+    <tspan class="green">🤝</tspan>
+    <tspan> Open to collaborating on </tspan>
+    <tspan class="blue">interesting projects</tspan>
+  </text>
+
+  <text x="40" y="475" class="text line l9">
+    <tspan class="red">📍</tspan>
+    <tspan> Based in </tspan>
+    <tspan class="purple">London, United Kingdom 🇬🇧</tspan>
+  </text>
+
+  <!-- blinking status -->
+  <circle cx="41" cy="515" r="5" fill="#7EE787" class="pulse"/>
+
+  <text x="58" y="521" class="text" font-size="15">
+    STATUS: learning • building • improving
+  </text>
+
+  <rect
+    x="405"
+    y="507"
+    width="9"
+    height="18"
+    rx="1"
+    fill="#58A6FF"
+    class="cursor"
+  />
+
+  <!-- subtle scanner -->
+  <rect
+    x="5"
+    y="0"
+    width="890"
+    height="80"
+    fill="#58A6FF"
+    class="scan"
+  />
+
+</svg>
