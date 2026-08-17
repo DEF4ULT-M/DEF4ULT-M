@@ -1,0 +1,96 @@
+<svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+  .bg {
+    fill: #0d1117;
+    stroke: url(#border);
+    stroke-width: 2;
+  }
+
+  .title {
+    font-family: "Courier New", monospace;
+    font-size: 28px;
+    font-weight: bold;
+    fill: #58a6ff;
+  }
+
+  .skill {
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    animation: reveal 10s infinite;
+  }
+
+  .s1 { animation-delay: 0s; fill:#3776AB; }
+  .s2 { animation-delay: .7s; fill:#ED8B00; }
+  .s3 { animation-delay: 1.4s; fill:#F80000; }
+  .s4 { animation-delay: 2.1s; fill:#777BB4; }
+  .s5 { animation-delay: 2.8s; fill:#F7DF1E; }
+  .s6 { animation-delay: 3.5s; fill:#E34F26; }
+  .s7 { animation-delay: 4.2s; fill:#1572B6; }
+  .s8 { animation-delay: 4.9s; fill:#39c5cf; }
+
+  @keyframes reveal {
+    0%, 5% {
+      opacity: 0;
+      transform: translateY(12px) scale(.8);
+    }
+
+    10%, 82% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: drop-shadow(0 0 7px currentColor);
+    }
+
+    92%, 100% {
+      opacity: 0;
+      transform: translateY(-8px) scale(.9);
+    }
+  }
+
+  .scan {
+    fill: url(#scan);
+    opacity: .10;
+    animation: scanMove 3s linear infinite;
+  }
+
+  @keyframes scanMove {
+    from { transform: translateX(-900px); }
+    to { transform: translateX(900px); }
+  }
+</style>
+
+<defs>
+  <linearGradient id="border" x1="0" y1="0" x2="900" y2="320">
+    <stop stop-color="#58A6FF"/>
+    <stop offset=".5" stop-color="#A371F7"/>
+    <stop offset="1" stop-color="#39C5CF"/>
+  </linearGradient>
+
+  <linearGradient id="scan" x1="0" y1="0" x2="150" y2="0">
+    <stop stop-color="transparent"/>
+    <stop offset=".5" stop-color="#58A6FF"/>
+    <stop offset="1" stop-color="transparent"/>
+  </linearGradient>
+</defs>
+
+<rect x="1" y="1" width="898" height="318" rx="18" class="bg"/>
+
+<text x="450" y="60" text-anchor="middle" class="title">
+  🛠 Languages &amp; Technologies
+</text>
+
+<text x="90" y="135" class="skill s1">🐍 Python</text>
+<text x="290" y="135" class="skill s2">☕ Java</text>
+<text x="490" y="135" class="skill s3">🗄 Oracle</text>
+<text x="690" y="135" class="skill s4">🐘 PHP</text>
+
+<text x="90" y="220" class="skill s5">⚡ JavaScript</text>
+<text x="290" y="220" class="skill s6">🌐 HTML5</text>
+<text x="490" y="220" class="skill s7">🎨 CSS3</text>
+<text x="690" y="220" class="skill s8">💾 SQL</text>
+
+<rect x="0" y="0" width="130" height="320" class="scan"/>
+
+</svg>
