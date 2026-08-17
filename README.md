@@ -1,4 +1,4 @@
-# 👋 Hey Everyone, I'm Makhmud
+# 👋 Hey, I'm Makhmud
 
 <h3 align="center">📊 Data Scientist • ⚙️ Backend Developer • 🌐 Web Developer</h3>
 
