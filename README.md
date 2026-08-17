@@ -20,28 +20,20 @@
 
 <br/><br/>
 
+
+<br/>
+
+<div align="center">
+
 <img
-  src="https://komarev.com/ghpvc/?username=DEF4ULT-M&label=PROFILE+VIEWS&color=6e40c9&style=for-the-badge"
-  alt="Profile views"
+  src="./assets/about.svg"
+  width="95%"
+  alt="Animated About Makhmud"
 />
 
 </div>
 
 <br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=gradient"/>
-
-## 💻 Welcome to My GitHub Universe!
-
-* 📊 Exploring **Data Science, Data Analysis & Machine Learning**
-* ⚙️ Building reliable **backend applications and APIs**
-* 🌐 Developing modern **web applications**
-* 🐍 Working primarily with **Python**
-* 🗄️ Experienced with **SQL & Oracle databases**
-* ☕ Building and learning with **Java**
-* 🚀 Always improving my programming and problem-solving skills
-* 🤝 Open to collaborating on interesting projects
-* 📍 Based in **London, United Kingdom**
 
 ---
 
