@@ -34,15 +34,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=DEF4ULT-M&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DEF4ULT-M&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
 ## 🔥 Contribution Streak
 
 <p align="center">
@@ -51,21 +42,6 @@
 
 ---
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DEF4ULT-M&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
-</p>
-
----
-
-## 📈 Contribution Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEF4ULT-M&theme=tokyo-night&hide_border=true" />
-</p>
-
----
 
 ## 👀 Profile Visitors
 
