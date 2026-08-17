@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0d1117,50:6e40c9,100:0969da&text=Hey%20Everyone,%20I'm%20Makhmud%20👋&fontSize=42&fontAlignY=35&fontColor=ffffff&animation=fadeIn&desc=Welcome%20to%20my%20GitHub%20Universe&descSize=17&descAlignY=56"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0d1117,50:6e40c9,100:0969da&text=Hey%20I'm%20Makhmud%20👋&fontSize=42&fontAlignY=35&fontColor=ffffff&animation=fadeIn&desc=Welcome%20to%20my%20GitHub%20Universe&descSize=17&descAlignY=56"/>
 
 <a href="https://github.com/DEF4ULT-M">
   <img
