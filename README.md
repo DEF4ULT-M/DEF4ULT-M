@@ -2,14 +2,6 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0d1117,50:6e40c9,100:0969da&text=Hey%20I'm%20Makhmud%20👋&fontSize=42&fontAlignY=35&fontColor=ffffff&animation=fadeIn&desc=Welcome%20to%20my%20GitHub%20Universe&descSize=17&descAlignY=56"/>
 
-<a href="https://github.com/DEF4ULT-M">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2200&pause=650&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=70&lines=📊+Data+Scientist;⚙️+Backend+Developer;🌐+Web+Developer;🐍+Python+Developer;🗄️+Database+Developer;🚀+Building+Ideas+Into+Software"
-    alt="Typing Animation"
-  />
-</a>
-
-<br/>
 
 <img
   src="./assets/terminal.svg"
