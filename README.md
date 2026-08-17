@@ -11,15 +11,6 @@
 
 <br/><br/>
 
-<a href="https://github.com/DEF4ULT-M">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1200&color=A371F7&center=true&vCenter=true&repeat=true&width=800&height=45&lines=Turning+data+into+insights+📈;Turning+ideas+into+reliable+software+💻;Learning+→+Building+→+Improving+→+Repeating+🔥"
-    alt="Animated subtitle"
-  />
-</a>
-
-<br/><br/>
-
 
 <br/>
 
