@@ -52,37 +52,244 @@
       fill: #ff7b72;
     }
 
-    .line {
-      opacity: 0;
-      animation: show 0.4s forwards;
+    .glow {
+      filter: drop-shadow(0 0 6px #58a6ff);
     }
 
-    .l1 { animation-delay: 0.8s; }
-    .l2 { animation-delay: 1.5s; }
-    .l3 { animation-delay: 2.3s; }
-    .l4 { animation-delay: 3.0s; }
-    .l5 { animation-delay: 3.8s; }
-    .l6 { animation-delay: 4.5s; }
-    .l7 { animation-delay: 5.3s; }
-    .l8 { animation-delay: 6.0s; }
-    .l9 { animation-delay: 6.8s; }
-    .l10 { animation-delay: 7.5s; }
+    /* =========================
+       LOOPING LINE ANIMATIONS
+       ========================= */
 
-    @keyframes show {
-      from {
+    .line {
+      opacity: 0;
+      animation-duration: 11s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+
+    .l1 {
+      animation-name: line1;
+    }
+
+    .l2 {
+      animation-name: line2;
+    }
+
+    .l3 {
+      animation-name: line3;
+    }
+
+    .l4 {
+      animation-name: line4;
+    }
+
+    .l5 {
+      animation-name: line5;
+    }
+
+    .l6 {
+      animation-name: line6;
+    }
+
+    .l7 {
+      animation-name: line7;
+    }
+
+    .l8 {
+      animation-name: line8;
+    }
+
+    .l9 {
+      animation-name: line9;
+    }
+
+    .l10 {
+      animation-name: line10;
+    }
+
+    @keyframes line1 {
+      0%, 6% {
         opacity: 0;
         transform: translateY(8px);
       }
 
-      to {
+      7%, 94% {
         opacity: 1;
         transform: translateY(0);
       }
+
+      98%, 100% {
+        opacity: 0;
+      }
     }
+
+    @keyframes line2 {
+      0%, 13% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      14%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line3 {
+      0%, 20% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      21%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line4 {
+      0%, 27% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      28%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line5 {
+      0%, 34% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      35%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line6 {
+      0%, 41% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      42%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line7 {
+      0%, 48% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      49%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line8 {
+      0%, 55% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      56%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line9 {
+      0%, 62% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      63%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes line10 {
+      0%, 69% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      70%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    /* =========================
+       CURSOR
+       ========================= */
 
     .cursor {
       fill: #58a6ff;
-      animation: blink 0.8s infinite;
+      animation:
+        cursorVisibility 11s infinite,
+        blink 0.8s infinite;
+    }
+
+    @keyframes cursorVisibility {
+      0%, 68% {
+        opacity: 0;
+      }
+
+      70%, 94% {
+        opacity: 1;
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
     }
 
     @keyframes blink {
@@ -95,22 +302,41 @@
       }
     }
 
-    .glow {
-      filter: drop-shadow(0 0 6px #58a6ff);
-    }
+    /* =========================
+       PROGRESS BAR LOOP
+       ========================= */
 
     .progress {
-      animation: progressGrow 3s ease forwards;
-      animation-delay: 7.7s;
-      transform-origin: left;
-      transform: scaleX(0);
+      transform-origin: left center;
+      transform-box: fill-box;
+      animation: progressGrow 11s infinite ease;
     }
 
     @keyframes progressGrow {
-      to {
+      0%, 70% {
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      72% {
+        transform: scaleX(0);
+        opacity: 1;
+      }
+
+      88%, 94% {
         transform: scaleX(1);
+        opacity: 1;
+      }
+
+      98%, 100% {
+        transform: scaleX(0);
+        opacity: 0;
       }
     }
+
+    /* =========================
+       MOVING SCANNER
+       ========================= */
 
     .scan {
       fill: url(#scanGradient);
@@ -165,7 +391,12 @@
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="510" rx="18" class="bg"/>
+  <rect
+    width="900"
+    height="510"
+    rx="18"
+    class="bg"
+  />
 
   <!-- Terminal -->
   <rect
@@ -174,12 +405,14 @@
     width="898"
     height="508"
     rx="18"
-    class="terminal"/>
+    class="terminal"
+  />
 
   <!-- Top bar -->
   <path
     d="M1 18C1 8.6 8.6 1 18 1H882C891.4 1 899 8.6 899 18V55H1V18Z"
-    class="titlebar"/>
+    class="titlebar"
+  />
 
   <!-- Traffic lights -->
   <circle cx="28" cy="28" r="7" fill="#ff5f56"/>
@@ -197,54 +430,81 @@
   </text>
 
   <!-- Command 1 -->
-  <text x="30" y="95" class="text line l1">
+  <text
+    x="30"
+    y="95"
+    class="text line l1">
     <tspan class="prompt">➜  ~ </tspan>
     <tspan class="command">whoami</tspan>
   </text>
 
-  <text x="30" y="125" class="text line l2">
+  <text
+    x="30"
+    y="125"
+    class="text line l2">
     <tspan class="highlight">Makhmud</tspan>
     <tspan> — Data Scientist • Backend Developer • Web Developer</tspan>
   </text>
 
   <!-- Command 2 -->
-  <text x="30" y="170" class="text line l3">
+  <text
+    x="30"
+    y="170"
+    class="text line l3">
     <tspan class="prompt">➜  ~ </tspan>
     <tspan class="command">location</tspan>
   </text>
 
-  <text x="30" y="200" class="text line l4">
+  <text
+    x="30"
+    y="200"
+    class="text line l4">
     <tspan class="location">London, United Kingdom 🇬🇧</tspan>
   </text>
 
   <!-- Command 3 -->
-  <text x="30" y="245" class="text line l5">
+  <text
+    x="30"
+    y="245"
+    class="text line l5">
     <tspan class="prompt">➜  ~ </tspan>
     <tspan class="command">cat stack.txt</tspan>
   </text>
 
-  <text x="30" y="275" class="text line l6">
+  <text
+    x="30"
+    y="275"
+    class="text line l6">
     <tspan class="cyan">Python</tspan>
     <tspan>  •  </tspan>
     <tspan class="yellow">Java</tspan>
     <tspan>  •  SQL  •  Oracle  •  PHP</tspan>
   </text>
 
-  <text x="30" y="305" class="text line l7">
+  <text
+    x="30"
+    y="305"
+    class="text line l7">
     <tspan>JavaScript  •  HTML  •  CSS</tspan>
   </text>
 
   <!-- Command 4 -->
-  <text x="30" y="350" class="text line l8">
+  <text
+    x="30"
+    y="350"
+    class="text line l8">
     <tspan class="prompt">➜  ~ </tspan>
     <tspan class="command">./build-future.sh</tspan>
   </text>
 
-  <text x="30" y="382" class="text line l9">
+  <text
+    x="30"
+    y="382"
+    class="text line l9">
     <tspan>Building ideas into scalable software...</tspan>
   </text>
 
-  <!-- Progress bar -->
+  <!-- Progress bar background -->
   <rect
     x="30"
     y="405"
@@ -252,8 +512,10 @@
     height="11"
     rx="5"
     fill="#21262d"
-    class="line l10"/>
+    class="line l10"
+  />
 
+  <!-- Progress bar -->
   <rect
     x="30"
     y="405"
@@ -261,25 +523,36 @@
     height="11"
     rx="5"
     fill="url(#progressGradient)"
-    class="progress glow"/>
+    class="progress glow"
+  />
 
-  <text x="700" y="416" class="text line l10" font-size="15">
+  <!-- Progress text -->
+  <text
+    x="700"
+    y="416"
+    class="text line l10"
+    font-size="15">
     80%
   </text>
 
   <!-- Final prompt -->
-  <text x="30" y="465" class="text line l10">
+  <text
+    x="30"
+    y="465"
+    class="text line l10">
     <tspan class="prompt">➜  ~ </tspan>
     <tspan>ready</tspan>
   </text>
 
+  <!-- Blinking cursor -->
   <rect
     x="115"
     y="450"
     width="10"
     height="20"
     rx="1"
-    class="cursor"/>
+    class="cursor"
+  />
 
   <!-- Moving scanner -->
   <rect
@@ -287,5 +560,7 @@
     y="0"
     width="892"
     height="80"
-    class="scan"/>
+    class="scan"
+  />
+
 </svg>
