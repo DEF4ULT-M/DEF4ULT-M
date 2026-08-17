@@ -435,7 +435,7 @@
     y="95"
     class="text line l1">
     <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">whoami</tspan>
+    <tspan class="command">who-am-i</tspan>
   </text>
 
   <text
@@ -462,31 +462,6 @@
     <tspan class="location">London, United Kingdom 🇬🇧</tspan>
   </text>
 
-  <!-- Command 3 -->
-  <text
-    x="30"
-    y="245"
-    class="text line l5">
-    <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">cat stack.txt</tspan>
-  </text>
-
-  <text
-    x="30"
-    y="275"
-    class="text line l6">
-    <tspan class="cyan">Python</tspan>
-    <tspan>  •  </tspan>
-    <tspan class="yellow">Java</tspan>
-    <tspan>  •  SQL  •  Oracle  •  PHP</tspan>
-  </text>
-
-  <text
-    x="30"
-    y="305"
-    class="text line l7">
-    <tspan>JavaScript  •  HTML  •  CSS</tspan>
-  </text>
 
   <!-- Command 4 -->
   <text
@@ -494,7 +469,7 @@
     y="350"
     class="text line l8">
     <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">./build-future.sh</tspan>
+    <tspan class="command">./build-future</tspan>
   </text>
 
   <text
