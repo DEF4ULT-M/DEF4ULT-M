@@ -1,12 +1,43 @@
-# 👋 Hey, I'm Makhmud
+<div align="center">
 
-<h3 align="center">📊 Data Scientist • ⚙️ Backend Developer • 🌐 Web Developer</h3>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0d1117,50:6e40c9,100:0969da&text=Hey%20Everyone,%20I'm%20Makhmud%20👋&fontSize=42&fontAlignY=35&fontColor=ffffff&animation=fadeIn&desc=Welcome%20to%20my%20GitHub%20Universe&descSize=17&descAlignY=56"/>
 
-<p align="center">
-  <i>Turning data into insights and ideas into reliable software.</i>
-</p>
+<a href="https://github.com/DEF4ULT-M">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2200&pause=650&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=70&lines=📊+Data+Scientist;⚙️+Backend+Developer;🌐+Web+Developer;🐍+Python+Developer;🗄️+Database+Developer;🚀+Building+Ideas+Into+Software"
+    alt="Typing Animation"
+  />
+</a>
 
----
+<br/>
+
+<img
+  src="./assets/terminal.svg"
+  width="95%"
+  alt="Makhmud animated terminal"
+/>
+
+<br/><br/>
+
+<a href="https://github.com/DEF4ULT-M">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1200&color=A371F7&center=true&vCenter=true&repeat=true&width=800&height=45&lines=Turning+data+into+insights+📈;Turning+ideas+into+reliable+software+💻;Learning+→+Building+→+Improving+→+Repeating+🔥"
+    alt="Animated subtitle"
+  />
+</a>
+
+<br/><br/>
+
+<img
+  src="https://komarev.com/ghpvc/?username=DEF4ULT-M&label=PROFILE+VIEWS&color=6e40c9&style=for-the-badge"
+  alt="Profile views"
+/>
+
+</div>
+
+<br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=gradient"/>
 
 ## 💻 Welcome to My GitHub Universe!
 
