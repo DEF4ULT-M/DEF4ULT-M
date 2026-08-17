@@ -1,7 +1,7 @@
 <svg
   width="900"
-  height="510"
-  viewBox="0 0 900 510"
+  height="430"
+  viewBox="0 0 900 430"
   fill="none"
   xmlns="http://www.w3.org/2000/svg">
 
@@ -40,14 +40,6 @@
       font-weight: bold;
     }
 
-    .yellow {
-      fill: #e3b341;
-    }
-
-    .cyan {
-      fill: #39c5cf;
-    }
-
     .location {
       fill: #ff7b72;
     }
@@ -56,64 +48,34 @@
       filter: drop-shadow(0 0 6px #58a6ff);
     }
 
-    /* =========================
-       LOOPING LINE ANIMATIONS
-       ========================= */
+    /* ==================================
+       MAIN LOOP
+       ================================== */
 
     .line {
       opacity: 0;
-      animation-duration: 11s;
+      animation-duration: 9s;
       animation-iteration-count: infinite;
       animation-timing-function: ease;
     }
 
-    .l1 {
-      animation-name: line1;
-    }
+    .l1 { animation-name: line1; }
+    .l2 { animation-name: line2; }
+    .l3 { animation-name: line3; }
+    .l4 { animation-name: line4; }
+    .l5 { animation-name: line5; }
+    .l6 { animation-name: line6; }
+    .l7 { animation-name: line7; }
 
-    .l2 {
-      animation-name: line2;
-    }
-
-    .l3 {
-      animation-name: line3;
-    }
-
-    .l4 {
-      animation-name: line4;
-    }
-
-    .l5 {
-      animation-name: line5;
-    }
-
-    .l6 {
-      animation-name: line6;
-    }
-
-    .l7 {
-      animation-name: line7;
-    }
-
-    .l8 {
-      animation-name: line8;
-    }
-
-    .l9 {
-      animation-name: line9;
-    }
-
-    .l10 {
-      animation-name: line10;
-    }
+    /* who-am-i */
 
     @keyframes line1 {
-      0%, 6% {
+      0%, 7% {
         opacity: 0;
         transform: translateY(8px);
       }
 
-      7%, 94% {
+      8%, 94% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -122,14 +84,16 @@
         opacity: 0;
       }
     }
+
+    /* Makhmud */
 
     @keyframes line2 {
-      0%, 13% {
+      0%, 16% {
         opacity: 0;
         transform: translateY(8px);
       }
 
-      14%, 94% {
+      17%, 94% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -138,24 +102,10 @@
         opacity: 0;
       }
     }
+
+    /* location command */
 
     @keyframes line3 {
-      0%, 20% {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      21%, 94% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      98%, 100% {
-        opacity: 0;
-      }
-    }
-
-    @keyframes line4 {
       0%, 27% {
         opacity: 0;
         transform: translateY(8px);
@@ -171,13 +121,15 @@
       }
     }
 
-    @keyframes line5 {
-      0%, 34% {
+    /* London */
+
+    @keyframes line4 {
+      0%, 37% {
         opacity: 0;
         transform: translateY(8px);
       }
 
-      35%, 94% {
+      38%, 94% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -186,14 +138,34 @@
         opacity: 0;
       }
     }
+
+    /* build future command */
+
+    @keyframes line5 {
+      0%, 49% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      50%, 94% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      98%, 100% {
+        opacity: 0;
+      }
+    }
+
+    /* building text */
 
     @keyframes line6 {
-      0%, 41% {
+      0%, 59% {
         opacity: 0;
         transform: translateY(8px);
       }
 
-      42%, 94% {
+      60%, 94% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -202,56 +174,10 @@
         opacity: 0;
       }
     }
+
+    /* progress + ready */
 
     @keyframes line7 {
-      0%, 48% {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      49%, 94% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      98%, 100% {
-        opacity: 0;
-      }
-    }
-
-    @keyframes line8 {
-      0%, 55% {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      56%, 94% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      98%, 100% {
-        opacity: 0;
-      }
-    }
-
-    @keyframes line9 {
-      0%, 62% {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      63%, 94% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      98%, 100% {
-        opacity: 0;
-      }
-    }
-
-    @keyframes line10 {
       0%, 69% {
         opacity: 0;
         transform: translateY(8px);
@@ -267,19 +193,22 @@
       }
     }
 
-    /* =========================
+    /* ==================================
        CURSOR
-       ========================= */
+       ================================== */
+
+    .cursor-group {
+      opacity: 0;
+      animation: cursorShow 9s infinite;
+    }
 
     .cursor {
       fill: #58a6ff;
-      animation:
-        cursorVisibility 11s infinite,
-        blink 0.8s infinite;
+      animation: blink 0.8s steps(1) infinite;
     }
 
-    @keyframes cursorVisibility {
-      0%, 68% {
+    @keyframes cursorShow {
+      0%, 69% {
         opacity: 0;
       }
 
@@ -293,32 +222,32 @@
     }
 
     @keyframes blink {
-      0%, 45% {
+      0%, 49% {
         opacity: 1;
       }
 
-      46%, 100% {
+      50%, 100% {
         opacity: 0;
       }
     }
 
-    /* =========================
-       PROGRESS BAR LOOP
-       ========================= */
+    /* ==================================
+       PROGRESS BAR
+       ================================== */
 
     .progress {
       transform-origin: left center;
       transform-box: fill-box;
-      animation: progressGrow 11s infinite ease;
+      animation: progressGrow 9s infinite ease;
     }
 
     @keyframes progressGrow {
-      0%, 70% {
+      0%, 69% {
         transform: scaleX(0);
         opacity: 0;
       }
 
-      72% {
+      70% {
         transform: scaleX(0);
         opacity: 1;
       }
@@ -334,9 +263,9 @@
       }
     }
 
-    /* =========================
-       MOVING SCANNER
-       ========================= */
+    /* ==================================
+       SCANNER
+       ================================== */
 
     .scan {
       fill: url(#scanGradient);
@@ -346,25 +275,39 @@
 
     @keyframes scanMove {
       from {
-        transform: translateY(-500px);
+        transform: translateY(-430px);
       }
 
       to {
-        transform: translateY(500px);
+        transform: translateY(430px);
       }
     }
   </style>
 
   <defs>
+
     <linearGradient
       id="borderGradient"
       x1="0"
       y1="0"
       x2="900"
-      y2="510">
-      <stop stop-color="#58A6FF"/>
-      <stop offset="0.5" stop-color="#A371F7"/>
-      <stop offset="1" stop-color="#39C5CF"/>
+      y2="430">
+
+      <stop
+        offset="0"
+        stop-color="#58A6FF"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#A371F7"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#39C5CF"
+      />
+
     </linearGradient>
 
     <linearGradient
@@ -373,9 +316,22 @@
       y1="0"
       x2="650"
       y2="0">
-      <stop stop-color="#58A6FF"/>
-      <stop offset="0.5" stop-color="#A371F7"/>
-      <stop offset="1" stop-color="#39C5CF"/>
+
+      <stop
+        offset="0"
+        stop-color="#58A6FF"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#A371F7"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#39C5CF"
+      />
+
     </linearGradient>
 
     <linearGradient
@@ -384,116 +340,213 @@
       y1="0"
       x2="0"
       y2="100">
-      <stop stop-color="transparent"/>
-      <stop offset="0.5" stop-color="#58A6FF"/>
-      <stop offset="1" stop-color="transparent"/>
+
+      <stop
+        offset="0"
+        stop-color="#58A6FF"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#58A6FF"
+        stop-opacity="1"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#58A6FF"
+        stop-opacity="0"
+      />
+
     </linearGradient>
+
+    <clipPath id="terminalClip">
+      <rect
+        x="2"
+        y="2"
+        width="896"
+        height="426"
+        rx="17"
+      />
+    </clipPath>
+
   </defs>
 
   <!-- Background -->
+
   <rect
     width="900"
-    height="510"
+    height="430"
     rx="18"
     class="bg"
   />
 
   <!-- Terminal -->
+
   <rect
     x="1"
     y="1"
     width="898"
-    height="508"
+    height="428"
     rx="18"
     class="terminal"
   />
 
-  <!-- Top bar -->
+  <!-- Top Bar -->
+
   <path
     d="M1 18C1 8.6 8.6 1 18 1H882C891.4 1 899 8.6 899 18V55H1V18Z"
     class="titlebar"
   />
 
-  <!-- Traffic lights -->
-  <circle cx="28" cy="28" r="7" fill="#ff5f56"/>
-  <circle cx="52" cy="28" r="7" fill="#ffbd2e"/>
-  <circle cx="76" cy="28" r="7" fill="#27c93f"/>
+  <!-- Traffic Lights -->
 
-  <!-- Terminal title -->
+  <circle
+    cx="28"
+    cy="28"
+    r="7"
+    fill="#ff5f56"
+  />
+
+  <circle
+    cx="52"
+    cy="28"
+    r="7"
+    fill="#ffbd2e"
+  />
+
+  <circle
+    cx="76"
+    cy="28"
+    r="7"
+    fill="#27c93f"
+  />
+
+  <!-- Terminal Title -->
+
   <text
     x="450"
     y="34"
     text-anchor="middle"
     class="text"
     font-size="15">
+
     makhmud@github: ~/DEF4ULT-M
+
   </text>
 
-  <!-- Command 1 -->
+  <!-- =========================
+       WHO AM I
+       ========================= -->
+
   <text
     x="30"
-    y="95"
+    y="100"
     class="text line l1">
-    <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">who-am-i</tspan>
+
+    <tspan class="prompt">
+      ➜  ~
+    </tspan>
+
+    <tspan class="command">
+      who-am-i
+    </tspan>
+
   </text>
 
   <text
     x="30"
-    y="125"
+    y="135"
     class="text line l2">
-    <tspan class="highlight">Makhmud</tspan>
-    <tspan> — Data Scientist • Backend Developer • Web Developer</tspan>
+
+    <tspan class="highlight">
+      Makhmud
+    </tspan>
+
+    <tspan>
+      — Data Scientist • Backend Developer • Web Developer
+    </tspan>
+
   </text>
 
-  <!-- Command 2 -->
+  <!-- =========================
+       LOCATION
+       ========================= -->
+
   <text
     x="30"
-    y="170"
+    y="190"
     class="text line l3">
-    <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">location</tspan>
+
+    <tspan class="prompt">
+      ➜  ~
+    </tspan>
+
+    <tspan class="command">
+      location
+    </tspan>
+
   </text>
 
   <text
     x="30"
-    y="200"
+    y="225"
     class="text line l4">
-    <tspan class="location">London, United Kingdom 🇬🇧</tspan>
+
+    <tspan class="location">
+      London, United Kingdom 🇬🇧
+    </tspan>
+
   </text>
 
+  <!-- =========================
+       BUILD FUTURE
+       ========================= -->
 
-  <!-- Command 3 -->
   <text
     x="30"
-    y="350"
-    class="text line l8">
-    <tspan class="prompt">➜  ~ </tspan>
-    <tspan class="command">./build-future</tspan>
+    y="280"
+    class="text line l5">
+
+    <tspan class="prompt">
+      ➜  ~
+    </tspan>
+
+    <tspan class="command">
+      ./build-future
+    </tspan>
+
   </text>
 
   <text
     x="30"
-    y="382"
-    class="text line l9">
-    <tspan>Building ideas into scalable software...</tspan>
+    y="315"
+    class="text line l6">
+
+    <tspan>
+      Building ideas into scalable software...
+    </tspan>
+
   </text>
 
-  <!-- Progress bar background -->
+  <!-- =========================
+       PROGRESS BAR
+       ========================= -->
+
   <rect
     x="30"
-    y="405"
+    y="340"
     width="650"
     height="11"
     rx="5"
     fill="#21262d"
-    class="line l10"
+    class="line l7"
   />
 
-  <!-- Progress bar -->
   <rect
     x="30"
-    y="405"
+    y="340"
     width="520"
     height="11"
     rx="5"
@@ -501,41 +554,62 @@
     class="progress glow"
   />
 
-  <!-- Progress text -->
   <text
     x="700"
-    y="416"
-    class="text line l10"
+    y="351"
+    class="text line l7"
     font-size="15">
+
     80%
+
   </text>
 
-  <!-- Final prompt -->
+  <!-- =========================
+       READY
+       ========================= -->
+
   <text
     x="30"
-    y="465"
-    class="text line l10">
-    <tspan class="prompt">➜  ~ </tspan>
-    <tspan>ready</tspan>
+    y="395"
+    class="text line l7">
+
+    <tspan class="prompt">
+      ➜  ~
+    </tspan>
+
+    <tspan>
+      ready
+    </tspan>
+
   </text>
 
-  <!-- Blinking cursor -->
-  <rect
-    x="115"
-    y="450"
-    width="10"
-    height="20"
-    rx="1"
-    class="cursor"
-  />
+  <!-- Blinking Cursor -->
 
-  <!-- Moving scanner -->
-  <rect
-    x="4"
-    y="0"
-    width="892"
-    height="80"
-    class="scan"
-  />
+  <g class="cursor-group">
+
+    <rect
+      x="115"
+      y="380"
+      width="10"
+      height="20"
+      rx="1"
+      class="cursor"
+    />
+
+  </g>
+
+  <!-- Moving Scanner -->
+
+  <g clip-path="url(#terminalClip)">
+
+    <rect
+      x="4"
+      y="0"
+      width="892"
+      height="80"
+      class="scan"
+    />
+
+  </g>
 
 </svg>
