@@ -161,7 +161,7 @@
 
   <!-- Heading -->
   <text x="35" y="105" class="title" filter="url(#glow)">
-    💻 Welcome to My GitHub Universe!
+    💻 Things You SHould Know About Me
   </text>
 
   <!-- Animated content -->
@@ -169,7 +169,7 @@
   <text x="40" y="155" class="text line l1">
     <tspan class="blue">📊</tspan>
     <tspan> Exploring </tspan>
-    <tspan class="purple">Data Science, Data Analysis &amp; Machine Learning</tspan>
+    <tspan class="purple">AI, Data Science, Data Analysis &amp; Machine Learning</tspan>
   </text>
 
   <text x="40" y="195" class="text line l2">
@@ -206,18 +206,6 @@
     <tspan class="purple">🚀</tspan>
     <tspan> Always improving my </tspan>
     <tspan class="green">programming &amp; problem-solving skills</tspan>
-  </text>
-
-  <text x="40" y="435" class="text line l8">
-    <tspan class="green">🤝</tspan>
-    <tspan> Open to collaborating on </tspan>
-    <tspan class="blue">interesting projects</tspan>
-  </text>
-
-  <text x="40" y="475" class="text line l9">
-    <tspan class="red">📍</tspan>
-    <tspan> Based in </tspan>
-    <tspan class="purple">London, United Kingdom 🇬🇧</tspan>
   </text>
 
   <!-- blinking status -->
